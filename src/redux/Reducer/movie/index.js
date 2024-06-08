@@ -1,12 +1,7 @@
 import { Movie_Action } from "../../Action/action_Type"
 
 const initialState = {
-    movies : [
-        {
-            name : "Code Lab",
-            desc : "laksdjflkasjdflkjsadf asdklfjklsadfj asdklfjlksadfj "
-        }
-    ],
+    movies : [],
     movie : {}
 }
 
