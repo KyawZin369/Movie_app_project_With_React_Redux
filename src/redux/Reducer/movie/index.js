@@ -1,8 +1,10 @@
+import { searchMovie } from "../../Action/Movies"
 import { Movie_Action } from "../../Action/action_Type"
 
 const initialState = {
     movies : [],
-    movie : {}
+    movie : {},
+    searchmovies : []
 }
 
 export const movieReducer = ( state = initialState , {type , payload} ) => {
@@ -12,6 +14,9 @@ export const movieReducer = ( state = initialState , {type , payload} ) => {
 
         case Movie_Action.SELECT_MOVIE : 
         return { ...initialState , movie : payload }
+
+        case Movie_Action.SEARCH_MOVIE : 
+        return { ...initialState , searchmovies : payload }
 
         default : return state
     }

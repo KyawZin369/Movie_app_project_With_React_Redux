@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <div>
       <div className="sm:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]">
-        <Carousel slideInterval={5000} className=" dark:bg-black bg-white">
+        <Carousel slideInterval={5000} className=" dark:bg-slate-800 bg-white">
           {moviesdata.length > 0
             ? moviesdata.map((movies) => (
                 <HeroCard key={movies.id} movies={movies} />

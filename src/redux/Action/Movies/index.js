@@ -14,3 +14,17 @@ export const selectMovie = (movie) => {
         payload : movie
     }
 }
+
+export const removeSelectMovie = (movie) => {
+    return {
+        type : Movie_Action.REMOVE_MOVIE_SELECTED,
+        payload : movie
+    }
+}
+
+export const searchMovie = (searchmovies) => {
+    return {
+        type : Movie_Action.SEARCH_MOVIE,
+        payload : searchmovies
+    }
+}

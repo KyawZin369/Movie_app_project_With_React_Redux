@@ -6,7 +6,7 @@ import { api, api_key } from "../api/apiFetch";
 import { useDispatch } from "react-redux";
 import { fetchMovie } from "../redux/Action/Movies";
 
-const Home = () => {
+const Home = ({isSearching}) => {
 
   const dispatch = useDispatch();
 
